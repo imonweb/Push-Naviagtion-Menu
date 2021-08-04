@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .main {
+  transform: translateX(350px);
+}
+
+.nav {
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #333;
+  transform: translateX(-350px);
+  transition: transform 0.2s;
+}
+
+.nav-close {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 15px 25px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.main {
+  transition: transform 0.2s;
+}
