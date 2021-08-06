@@ -24,8 +24,10 @@ body {
   top: 0;
   left: 0;
   background: #333;
+  /* background: #009578; */
   transform: translateX(-350px);
   transition: transform 0.2s;
+  overflow: hidden;
 }
 
 .nav-close {
@@ -37,6 +39,29 @@ body {
   padding: 15px 25px;
   color: #ddd;
   cursor: pointer;
+}
+
+.nav-links-container {
+  box-shadow: 0 -10px 10px rgba(0,0,0,0.15);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #ddd;
+}
+
+.nav-text {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-close:hover {
+  background: rgba(255,255,255,0.05);
 }
 
 .main {
